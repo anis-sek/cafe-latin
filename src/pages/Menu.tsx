@@ -4,7 +4,7 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import Zoom from 'react-medium-image-zoom'
 import 'react-medium-image-zoom/dist/styles.css'
 import menuImage from '@/assets/Menu café latin_page-0001.jpg';
-import decorativeOrnament from '@/assets/Café-logo.png';
+import decorativeOrnament from '@/assets/cafe-logo.png';
 import { useState } from "react";
 
 

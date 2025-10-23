@@ -24,7 +24,7 @@ import disser2 from '@/assets/dissert2.png';
 import disser3 from '@/assets/dissert3.png';
 import disser4 from '@/assets/dissert4.png';
 import disser5 from '@/assets/dissert5.png';
-import decorativeOrnament from '@/assets/Café-logo.png';
+import decorativeOrnament from '@/assets/cafe-logo.png';
 
 const Gallery: React.FC = () => {
   const { t } = useLanguage();

@@ -10,6 +10,7 @@ import { Menu, MapPin, Globe } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Link, useLocation } from 'react-router-dom';
 import { Language } from '@/types/language';
+import cafeLogo from '@/assets/cafe-logo.png';
 
 const Header: React.FC = () => {
   const { language, setLanguage, t } = useLanguage();
@@ -36,7 +37,7 @@ const Header: React.FC = () => {
               {t('home.title')}
             </div>
              <img 
-                src="/src/assets/cafe-logo.png" 
+                src={cafeLogo} 
                 alt="Decorative ornament" 
                 className="w-14 h-14 opacity-90"
               />

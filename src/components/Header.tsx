@@ -36,11 +36,6 @@ const Header: React.FC = () => {
             <div className="text-2xl font-elegant font-bold text-bordeaux">
               {t('home.title')}
             </div>
-             <img 
-                src={cafeLogo} 
-                alt="Decorative ornament" 
-                className="w-14 h-14 opacity-90"
-              />
           </Link>
 
           {/* Desktop Navigation */}

@@ -10,7 +10,6 @@ import { Menu, MapPin, Globe } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Link, useLocation } from 'react-router-dom';
 import { Language } from '@/types/language';
-import cafeLogo from '@/assets/cafe-logo.png';
 
 const Header: React.FC = () => {
   const { language, setLanguage, t } = useLanguage();
@@ -29,7 +28,7 @@ const Header: React.FC = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-bordeaux/20 shadow-elegant h-16">
-      <div className="container mx-auto px-3 h-full">
+      <div className="container mx-auto px-3 h-full mt-3">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">

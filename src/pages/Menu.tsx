@@ -1,11 +1,11 @@
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { useLanguage } from '@/contexts/LanguageContext';
+import Zoom from 'react-medium-image-zoom'
+import 'react-medium-image-zoom/dist/styles.css'
 import menuImage from '@/assets/Menu café latin_page-0001.jpg';
 import decorativeOrnament from '@/assets/Café-logo.png';
 import { useState } from "react";
-import Zoom from 'react-medium-image-zoom'
-import 'react-medium-image-zoom/dist/styles.css'
 
 
 const Menu: React.FC = () => {
@@ -101,39 +101,21 @@ const Menu: React.FC = () => {
             ))}
           </div>
 
-          {/* Menu Image */}
-          <div className="lg:sticky lg:top-32">
-    <>
-      {/* --- La Card cliquable --- */}
-      <Card 
-        className="shadow-elegant border-bordeaux/20 overflow-hidden cursor-pointer transition-transform hover:scale-105"
-        onClick={() => setIsOpen(true)}
-      >
-        <CardContent className="p-0">
-          <img 
-            src={menuImage}
-            alt="Menu du Café Latin"
-            className="w-full h-auto object-cover"
-          />
-        </CardContent>
-      </Card>
+          {/* Image cliquable avec plein écran et zoom intégré */}
+<div className="lg:sticky lg:top-32">
+  <Card className="shadow-elegant border-bordeaux/20 overflow-hidden">
+    <CardContent className="p-0">
+      <Zoom>
+        <img
+          src={menuImage}
+          alt="Menu du Café Latin"
+          className="w-full h-auto object-cover cursor-zoom-in transition-transform hover:scale-105 duration-300"
+        />
+      </Zoom>
+    </CardContent>
+  </Card>
+</div>
 
-      {/* --- Modal plein écran --- */}
-      {isOpen && (
-        <div 
-          className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 mt-20 "
-          onClick={() => setIsOpen(false)} 
-        >
-          <Zoom>
-          <img 
-            src={menuImage} 
-            alt="Menu plein écran"
-            className="w-full h-auto object-cover"
-          />
-          </Zoom>
-        </div>
-      )}
-    </>
 
 
             
@@ -179,7 +161,6 @@ const Menu: React.FC = () => {
           </p>
         </div>
       </div>
-    </div>
   );
 };
 

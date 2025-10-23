@@ -27,14 +27,19 @@ const Header: React.FC = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-bordeaux/20 shadow-elegant">
-      <div className="container mx-auto px-4 py-4">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-bordeaux/20 shadow-elegant h-16">
+      <div className="container mx-auto px-3 h-full">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
             <div className="text-2xl font-elegant font-bold text-bordeaux">
               {t('home.title')}
             </div>
+             <img 
+                src="/src/assets/logo-café-latin-3D.png" 
+                alt="Decorative ornament" 
+                className="w-14 h-14 opacity-90"
+              />
           </Link>
 
           {/* Desktop Navigation */}

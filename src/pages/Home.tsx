@@ -4,8 +4,8 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Clock, MapPin, Phone } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Link } from 'react-router-dom';
-import cafeInterior from '@/assets/cafe-interior.jpg';
-import decorativeOrnament from '@/assets/decorative-ornament.png';
+import cafeInterior from '@/assets/café-inside.png';
+import decorativeOrnament from '@/assets/logo-café-latin-3D.png';
 
 const Home: React.FC = () => {
   const { t } = useLanguage();
@@ -14,7 +14,7 @@ const Home: React.FC = () => {
     <div className="min-h-screen bg-gradient-elegant">
       {/* Hero Section */}
       <section className="relative pt-24 pb-16 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-background/90 to-background/70" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/60 to-background/60" />
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: `url(${cafeInterior})` }}
@@ -31,21 +31,21 @@ const Home: React.FC = () => {
               />
             </div>
             
-            <h1 className="text-5xl md:text-7xl font-elegant font-bold text-bordeaux mb-4 animate-fade-in">
+            <h1 className="text-5xl md:text-7xl font-elegant font-bold text-bordeaux mb-4 animate-fade-in text-glow">
               {t('home.title')}
             </h1>
             
-            <p className="text-xl md:text-2xl font-elegant text-gold mb-8 animate-fade-in" style={{ animationDelay: '0.2s' }}>
+            <p className="text-xl md:text-2xl font-elegant text-gold mb-8 animate-fade-in text-glow" style={{ animationDelay: '0.2s' }}>
               {t('home.subtitle')}
             </p>
             
             <div className="max-w-2xl mx-auto mb-12">
-              <p className="text-lg text-charcoal/80 leading-relaxed animate-fade-in" style={{ animationDelay: '0.4s' }}>
+              <p className="text-lg text-charcoal/80 leading-relaxed animate-fade-in text-glow" style={{ animationDelay: '0.4s', color: 'rgba(253, 252, 252, 1)' }}>
                 {t('home.description')}
               </p>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in" style={{ animationDelay: '0.6s' }}>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in mt-3" style={{ animationDelay: '0.6s' }}>
               <Button asChild size="lg" className="bg-gradient-primary hover:opacity-90 text-primary-foreground shadow-elegant">
                 <Link to="/menu">{t('home.cta.menu')}</Link>
               </Button>

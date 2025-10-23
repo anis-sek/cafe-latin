@@ -1,11 +1,16 @@
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { useLanguage } from '@/contexts/LanguageContext';
-import menuImage from '@/assets/menu-image.png';
-import decorativeOrnament from '@/assets/decorative-ornament.png';
+import menuImage from '@/assets/Menu café latin_page-0001.jpg';
+import decorativeOrnament from '@/assets/Café-logo.png';
+import { useState } from "react";
+import Zoom from 'react-medium-image-zoom'
+import 'react-medium-image-zoom/dist/styles.css'
+
 
 const Menu: React.FC = () => {
   const { t } = useLanguage();
+  const [isOpen, setIsOpen] = useState(false);
 
   // Sample menu data - in a real app, this would come from an API or CMS
   const menuSections = [
@@ -98,15 +103,39 @@ const Menu: React.FC = () => {
 
           {/* Menu Image */}
           <div className="lg:sticky lg:top-32">
-            <Card className="shadow-elegant border-bordeaux/20 overflow-hidden">
-              <CardContent className="p-0">
-                <img 
-                  src={menuImage}
-                  alt="Menu du Café Latin"
-                  className="w-full h-auto object-cover"
-                />
-              </CardContent>
-            </Card>
+    <>
+      {/* --- La Card cliquable --- */}
+      <Card 
+        className="shadow-elegant border-bordeaux/20 overflow-hidden cursor-pointer transition-transform hover:scale-105"
+        onClick={() => setIsOpen(true)}
+      >
+        <CardContent className="p-0">
+          <img 
+            src={menuImage}
+            alt="Menu du Café Latin"
+            className="w-full h-auto object-cover"
+          />
+        </CardContent>
+      </Card>
+
+      {/* --- Modal plein écran --- */}
+      {isOpen && (
+        <div 
+          className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 mt-20 "
+          onClick={() => setIsOpen(false)} 
+        >
+          <Zoom>
+          <img 
+            src={menuImage} 
+            alt="Menu plein écran"
+            className="w-full h-auto object-cover"
+          />
+          </Zoom>
+        </div>
+      )}
+    </>
+
+
             
             {/* Wine Selection */}
             <Card className="mt-8 shadow-card border-bordeaux/20 bg-card/80 backdrop-blur-sm">
@@ -115,18 +144,18 @@ const Menu: React.FC = () => {
                   Vins / Wines
                 </h2>
                 <div className="space-y-3">
-                  <div className="flex justify-between items-baseline">
-                    <span className="font-body">Bordeaux Rouge AOC</span>
+                  <div className="flex justify-between items-baseline group">
+                    <span className="font-body group-hover:text-bordeaux transition-colors">Bordeaux Rouge AOC</span>
                     <div className="flex-1 border-b border-dotted border-muted mx-3 mt-2"></div>
                     <span className="text-gold font-semibold">35€</span>
                   </div>
-                  <div className="flex justify-between items-baseline">
-                    <span className="font-body">Chablis Blanc</span>
+                  <div className="flex justify-between items-baseline group">
+                    <span className="font-body group-hover:text-bordeaux transition-colors">Chablis Blanc</span>
                     <div className="flex-1 border-b border-dotted border-muted mx-3 mt-2"></div>
                     <span className="text-gold font-semibold">40€</span>
                   </div>
-                  <div className="flex justify-between items-baseline">
-                    <span className="font-body">Champagne Brut</span>
+                  <div className="flex justify-between items-baseline group">
+                    <span className="font-body group-hover:text-bordeaux transition-colors">Champagne Brut</span>
                     <div className="flex-1 border-b border-dotted border-muted mx-3 mt-2"></div>
                     <span className="text-gold font-semibold">65€</span>
                   </div>

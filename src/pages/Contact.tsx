@@ -7,7 +7,7 @@ import { Label } from '@/components/ui/label';
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useToast } from '@/hooks/use-toast';
-import decorativeOrnament from '@/assets/decorative-ornament.png';
+import decorativeOrnament from '@/assets/Café-logo.png';
 
 const Contact: React.FC = () => {
   const { t } = useLanguage();

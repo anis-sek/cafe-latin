@@ -1,7 +1,7 @@
 import React from 'react';
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
-import decorativeOrnament from '@/assets/decorative-ornament.png';
+import decorativeOrnament from '@/assets/logo-café-latin-3D.png';
 
 const Footer: React.FC = () => {
   const { t } = useLanguage();
@@ -71,7 +71,7 @@ const Footer: React.FC = () => {
         <div className="border-t border-cream/20 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-sm text-cream/60 font-body">
-              © 2024 Café Latin Paris. Tous droits réservés.
+              © 2025 Café Latin Paris. Tous droits réservés.
             </div>
             <div className="text-sm text-cream/60 font-body">
               Quartier Latin • Saint-Michel • Odéon

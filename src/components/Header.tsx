@@ -36,7 +36,7 @@ const Header: React.FC = () => {
               {t('home.title')}
             </div>
              <img 
-                src="/src/assets/cafe-logo.png.png" 
+                src="/src/assets/cafe-logo.png" 
                 alt="Decorative ornament" 
                 className="w-14 h-14 opacity-90"
               />

@@ -9,7 +9,7 @@ export const translations = {
     
     // Home Page
     'home.title': 'Café Latin',
-    'home.subtitle': 'Restaurant Parisien Authentique',
+    'home.subtitle': 'L’élégance d’un restaurant parisien, l’authenticité en plus',
     'home.description': 'Situé au cœur du quartier latin, à une courte distance de la place Saint-Michel et de l\'Odéon, le Café Latin est ouvert tous les jours pour déjeuner, dîner, prendre un café ou un verre.',
     'home.hours.title': 'Horaires d\'ouverture',
     'home.hours.weekdays': 'Tous les jours de la semaine de 11h30 à minuit',
@@ -17,6 +17,8 @@ export const translations = {
     'home.hours.kitchen': 'Service continu (la cuisine est ouverte de midi à minuit)',
     'home.cta.menu': 'Découvrir notre Menu',
     'home.cta.contact': 'Nous Contacter',
+    'home.motto': 'La soif du bon',
+    'home.motto1': 'l’appétit du vrai',
     
     // Menu
     'menu.title': 'Notre Menu',
@@ -29,7 +31,7 @@ export const translations = {
     // Contact
     'contact.title': 'Contact',
     'contact.subtitle': 'Venez nous rendre visite',
-    'contact.address': '14 rue Git le Coeur, 75006 Paris',
+    'contact.address': '30 Rue Saint-André des Arts, 75006 Paris',
     'contact.phone': 'Téléphone',
     'contact.email': 'Email',
     'contact.form.title': 'Nous contacter',
@@ -39,9 +41,9 @@ export const translations = {
     'contact.form.submit': 'Envoyer',
     
     // Common
-    'common.address': '14 rue Git le Coeur, 75006 Paris',
-    'common.phone': '+33 1 43 54 23 70',
-    'common.email': 'contact@cafelatin.paris',
+    'common.address': '30 Rue Saint-André des Arts, 75006 Paris',
+    'common.phone': '+33 1 46 33 02 06',
+    'common.email': 'cafelatinparis6@gmail.com',
   },
   en: {
     // Navigation
@@ -61,6 +63,8 @@ export const translations = {
     'home.hours.kitchen': 'Continuous service (kitchen open from noon to midnight)',
     'home.cta.menu': 'Discover our Menu',
     'home.cta.contact': 'Contact Us',
+    'home.motto': 'The thirst for the good',
+    'home.motto1': 'the appetite for the true',
     
     // Menu
     'menu.title': 'Our Menu',
@@ -73,7 +77,7 @@ export const translations = {
     // Contact
     'contact.title': 'Contact',
     'contact.subtitle': 'Come visit us',
-    'contact.address': '14 rue Git le Coeur, 75006 Paris',
+    'contact.address': '30 Rue Saint-André des Arts, 75006 Paris',
     'contact.phone': 'Phone',
     'contact.email': 'Email',
     'contact.form.title': 'Contact us',
@@ -83,8 +87,9 @@ export const translations = {
     'contact.form.submit': 'Send',
     
     // Common
-    'common.address': '14 rue Git le Coeur, 75006 Paris',
+    'common.address': '30 Rue Saint-André des Arts, 75006 Paris',
     'common.phone': '+33 1 43 54 23 70',
     'common.email': 'contact@cafelatin.paris',
+
   }
 };

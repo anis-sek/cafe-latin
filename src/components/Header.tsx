@@ -10,6 +10,7 @@ import { Menu, MapPin, Globe } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Link, useLocation } from 'react-router-dom';
 import { Language } from '@/types/language';
+import textLogo from '@/assets/cafelatingin.png'; 
 
 const Header: React.FC = () => {
   const { language, setLanguage, t } = useLanguage();
@@ -17,7 +18,7 @@ const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleLocationClick = () => {
-    window.open('https://maps.google.com/?q=14+rue+Git+le+Coeur,+75006+Paris+France', '_blank');
+    window.open('https://maps.google.com/?q=30+rue+Saint-André+des+Arts,+75006+Paris+France', '_blank');
   };
 
   const handleLanguageChange = (lang: Language) => {
@@ -32,10 +33,12 @@ const Header: React.FC = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <div className="text-2xl font-elegant font-bold text-bordeaux">
-              {t('home.title')}
-            </div>
-          </Link>
+  <img 
+    src={textLogo} 
+    alt="Café Latin" 
+    className="h-10 w-auto object-contain" 
+  />
+</Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">

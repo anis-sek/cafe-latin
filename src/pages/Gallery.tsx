@@ -56,12 +56,6 @@ const Gallery: React.FC = () => {
       description: 'Un grand classique parisien, relevé par un gratin doré et fondant'
     },
     {
-      src: entrer2,
-      alt: 'Cuisine française',
-      title: 'Œuf mayo, écrasé de pomme de terre & échalotes',
-      description: 'L’incontournable revisité, servi avec douceur de pommes de terre et parfum d’échalotes'
-    },
-    {
       src: plat1,
       alt: 'Cuisine française',
       title: 'Bœuf tartare, frites maison',

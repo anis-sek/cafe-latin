@@ -20,9 +20,9 @@ All colors MUST be HSL.
     --popover-foreground: 30 8% 15%;
 
     /* Bordeaux Primary Theme */
-    --primary: 345 68% 35%; /* Rich bordeaux */
+    --primary: 356 76% 40%; /* Rich bordeaux */
     --primary-foreground: 45 15% 97%;
-    --primary-glow: 345 68% 45%; /* Lighter bordeaux for effects */
+    --primary-glow: 3356 76% 40%; /* Lighter bordeaux for effects */
 
     /* Gold Accent Theme */
     --secondary: 40 85% 65%; /* Elegant gold */
@@ -39,13 +39,13 @@ All colors MUST be HSL.
 
     --border: 30 8% 85%; /* Soft neutral border */
     --input: 45 12% 90%;
-    --ring: 345 68% 35%; /* Bordeaux ring */
+    --ring: 356 76% 40%; /* Bordeaux ring */
 
     --radius: 0.75rem;
 
     /* Custom Café Latin Design Tokens */
-    --bordeaux: 345 68% 35%;
-    --bordeaux-light: 345 68% 45%;
+    --bordeaux: 356 76% 40%;
+    --bordeaux-light: 356 76% 40%;
     --gold: 40 85% 65%;
     --gold-light: 40 85% 75%;
     --cream: 45 15% 97%;
@@ -110,8 +110,8 @@ All colors MUST be HSL.
     --ring: 345 68% 35%;
     
     /* Dark mode custom tokens */
-    --bordeaux: 345 68% 45%;
-    --bordeaux-light: 345 68% 55%;
+    --bordeaux: 356 76% 40%;
+    --bordeaux-light: 356 76% 40%;
     --gold: 40 85% 70%;
     --gold-light: 40 85% 80%;
     --cream: 45 15% 97%;

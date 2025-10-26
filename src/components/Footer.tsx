@@ -1,7 +1,7 @@
 import React from 'react';
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
-import decorativeOrnament from '@/assets/logo-café-latin-3D.png';
+import decorativeOrnament from '@/assets/newlogo.png';
 
 const Footer: React.FC = () => {
   const { t } = useLanguage();
@@ -17,15 +17,17 @@ const Footer: React.FC = () => {
               <img 
                 src={decorativeOrnament} 
                 alt="Decorative ornament" 
-                className="w-12 h-12 opacity-80"
+                className="w-24 h-24 rounded-full object-contain"
               />
               <h3 className="text-2xl font-elegant font-bold text-gold">
                 {t('home.title')}
               </h3>
             </div>
             <p className="text-cream/80 font-body text-sm leading-relaxed">
-              Restaurant parisien authentique au cœur du Quartier Latin. 
-              Découvrez l'art culinaire français dans une ambiance chaleureuse et raffinée.
+              Restaurant parisien authentique au cœur du Saint-Germain-des-Prés.
+              à deux pas de la notre-Dame,
+              Bistrot tres TITI-PARISIEN, Avec nous 55 sélections de vins. 
+              Découvrez la cuisine française dans une ambiance chaleureuse et amicale.
             </p>
           </div>
 

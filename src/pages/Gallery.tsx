@@ -7,24 +7,20 @@ import moulesside from '@/assets/moules-side.png';
 import bareside from '@/assets/bare-side.png';
 import vinsside from '@/assets/vins-side.png';
 import entrer1 from '@/assets/entrer1.png';
-import entrer2 from '@/assets/entrer2.png';
 import plat1 from '@/assets/plat1.png';
 import plat2 from '@/assets/plat2.png';
 import plat3 from '@/assets/plat3.png'; 
 import plat4 from '@/assets/plat4.png';
 import plat5 from '@/assets/plat5.png';
 import plat6 from '@/assets/plat6.png';
-import plat7 from '@/assets/plat7.png';
 import plat8 from '@/assets/plat8.png';
 import plat9 from '@/assets/plat9.png';
-import plat10 from '@/assets/plat10.png';
-import plat11 from '@/assets/plat11.png';
 import disser1 from '@/assets/dissert1.png';
 import disser2 from '@/assets/dissert2.png';
 import disser3 from '@/assets/dissert3.png';
 import disser4 from '@/assets/dissert4.png';
 import disser5 from '@/assets/dissert5.png';
-import decorativeOrnament from '@/assets/cafe-logo.png';
+import decorativeOrnament from '@/assets/logoCL1.png';
 
 const Gallery: React.FC = () => {
   const { t } = useLanguage();
@@ -35,7 +31,7 @@ const Gallery: React.FC = () => {
       src: cafeInterior,
       alt: 'Intérieur du Café Latin',
       title: 'Ambiance Chaleureuse',
-      description: 'Notre salle principale avec son décor authentique parisien'
+      description: 'Notre salle principale avec son décor typique parisien'
     },
     {
       src: cafeInterior1,
@@ -94,26 +90,14 @@ const Gallery: React.FC = () => {
     {
       src: plat8,
       alt: 'Plats signature',
-      title: 'Rognon de veau tendre',
+      title: 'Rognon de veau',
       description: 'Rognon de veau tendre, nappé de sauce à la moutarde violette, accompagné d’une purée de pommes de terre maison'
     },
     {
       src: plat9,
       alt: 'Plats signature',
-      title: 'Moules&Frites maison',
-      description: 'Savourez nos moules fraîches accompagnées de frites maison croustillantes !'
-    },
-    {
-      src: plat10,
-      alt: 'Plats signature',
-      title: 'Saucisse au couteau',
-      description: 'Saucisse au couteau servie avec sa purée de pommes de terre maison'
-    },
-    {
-      src: plat11,
-      alt: 'Plats signature',
-      title: 'Entrecôte (300 g) grillée',
-      description: 'Entrecôte (300 g) grillée, nappée de bleu des Causses, servie avec de savoureuses frites maison'
+      title: 'Moules&Frites',
+      description: 'Savourez nos moules fraîches accompagnées de frites croustillantes !'
     },
     {
       src: disser1,
@@ -125,7 +109,7 @@ const Gallery: React.FC = () => {
       src: disser2,
       alt: 'Plats signature',
       title: 'Mousse au chocolat',
-      description: 'Délicieuse mousse au chocolat intense (70% cacao), naturellement sans sucre'
+      description: 'Délicieuse mousse au chocolat intense (70% cacao), sans sucre ajouté'
     },
     {
       src: disser3,
@@ -163,15 +147,15 @@ const Gallery: React.FC = () => {
     <div className="min-h-screen bg-gradient-elegant pt-24 pb-16">
       <div className="container mx-auto px-4">
         {/* Header */}
-        <div className="text-center mb-16">
-          <div className="flex justify-center mb-6">
+        <div className="text-center mb-4">
+          <div className="flex justify-center">
             <img 
               src={decorativeOrnament} 
               alt="Decorative ornament" 
               className="w-20 h-20 opacity-80"
             />
           </div>
-          <h1 className="text-4xl md:text-6xl font-elegant font-bold text-bordeaux mb-4">
+          <h1 className="text-4xl md:text-6xl font-elegant font-bold text-bordeaux mb-2">
             {t('gallery.title')}
           </h1>
           <p className="text-xl text-gold font-elegant">
@@ -209,15 +193,15 @@ const Gallery: React.FC = () => {
         <div className="max-w-4xl mx-auto text-center">
           <Card className="shadow-elegant border-bordeaux/20 bg-card/80 backdrop-blur-sm">
             <CardContent className="p-12">
-              <div className="flex justify-center mb-6">
+              <div className="flex justify-center mb-2">
                 <img 
                   src={decorativeOrnament} 
                   alt="Decorative ornament" 
-                  className="w-16 h-16 opacity-60"
+                  className="w-20 h-20 opacity-80"
                 />
               </div>
               <h2 className="text-3xl font-elegant font-semibold text-bordeaux mb-6">
-                Une Expérience Authentique
+                Une Expérience typiquement Parisienne
               </h2>
               <p className="text-lg text-charcoal/80 leading-relaxed mb-6 font-body">
                 Plongez dans l'atmosphère unique du Café Latin, où chaque détail a été pensé pour vous offrir 

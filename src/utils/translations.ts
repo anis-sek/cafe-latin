@@ -15,10 +15,10 @@ export const translations = {
     'home.hours.weekdays': 'Tous les jours de la semaine de 11h30 à minuit',
     'home.hours.weekends': 'Jusqu\'à 2h00 du matin les week-ends',
     'home.hours.kitchen': 'Service continu (la cuisine est ouverte de midi à minuit)',
-    'home.cta.menu': 'Découvrir notre Menu',
-    'home.cta.contact': 'Nous Contacter',
-    'home.motto': 'La soif du bon',
-    'home.motto1': 'l’appétit du vrai',
+    'home.cta.menu': 'LA CARTE ',
+    'home.cta.contact': 'RÉSERVER',
+    'home.motto': 'BON APPETIT',
+    'home.motto1': 'LARGE SOIF',
     
     // Menu
     'menu.title': 'Notre Menu',
@@ -63,8 +63,8 @@ export const translations = {
     'home.hours.kitchen': 'Continuous service (kitchen open from noon to midnight)',
     'home.cta.menu': 'Discover our Menu',
     'home.cta.contact': 'Contact Us',
-    'home.motto': 'The thirst for the good',
-    'home.motto1': 'the appetite for the true',
+    'home.motto': 'Enjoy your meal',
+    'home.motto1': 'drink plenty of thirst',
     
     // Menu
     'menu.title': 'Our Menu',

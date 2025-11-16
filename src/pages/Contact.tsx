@@ -1,13 +1,10 @@
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
-import { Label } from '@/components/ui/label';
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useToast } from '@/hooks/use-toast';
-import decorativeOrnament from '@/assets/cafe-logo.png';
+import decorativeOrnament from '@/assets/logoCL1.png';
 
 const Contact: React.FC = () => {
   const { t } = useLanguage();
@@ -37,7 +34,7 @@ const Contact: React.FC = () => {
   };
 
   const handleLocationClick = () => {
-    window.open('https://maps.google.com/?q=14+rue+Git+le+Coeur,+75006+Paris+France', '_blank');
+    window.open('https://maps.google.com/?q=30+rue+Saint-André+des+Arts,+75006+Paris+France', '_blank');
   };
 
   return (
@@ -45,14 +42,14 @@ const Contact: React.FC = () => {
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16">
-          <div className="flex justify-center mb-6">
+          <div className="flex justify-center">
             <img 
               src={decorativeOrnament} 
               alt="Decorative ornament" 
-              className="w-20 h-20 opacity-80"
+              className="w-20 h-20 opacity-100"
             />
           </div>
-          <h1 className="text-4xl md:text-6xl font-elegant font-bold text-bordeaux mb-4">
+          <h1 className="text-4xl md:text-6xl font-elegant font-bold text-bordeaux">
             {t('contact.title')}
           </h1>
           <p className="text-xl text-gold font-elegant">
@@ -160,7 +157,7 @@ const Contact: React.FC = () => {
             <img 
               src={decorativeOrnament} 
               alt="Decorative ornament" 
-              className="w-16 h-16 opacity-60"
+              className="w-20 h-20 opacity-100"
             />
           </div>
           <p className="text-lg text-charcoal/80 max-w-2xl mx-auto font-body">

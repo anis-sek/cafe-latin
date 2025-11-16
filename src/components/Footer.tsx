@@ -23,11 +23,10 @@ const Footer: React.FC = () => {
                 {t('home.title')}
               </h3>
             </div>
-            <p className="text-cream/80 font-body text-sm leading-relaxed">
-              Restaurant parisien authentique au cœur du Saint-Germain-des-Prés.
-              à deux pas de la notre-Dame,
-              Bistrot tres TITI-PARISIEN, Avec nous 55 sélections de vins. 
-              Découvrez la cuisine française dans une ambiance chaleureuse et amicale.
+            <p className="text-cream/80 font-body text-sm leading-relaxed text-center">
+              Idéalement installé au cœur de Saint-Germain-des-Prés, notre restaurant parisien typique se trouve à deux pas de Notre-Dame.
+              Dans cet établissement au charme titi-parisien, découvrez nos 55 sélections de vins et savourez une cuisine française généreuse, 
+              servie dans une ambiance chaleureuse et conviviale.
             </p>
           </div>
 

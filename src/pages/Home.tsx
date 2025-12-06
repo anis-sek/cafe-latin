@@ -24,9 +24,9 @@ const Home: React.FC = () => {
   <div className="absolute inset-0 bg-black/40" />
 
   {/* Contenu Hero */}
-  <div className="relative z-10 flex flex-col items-center justify-end h-full text-center text-white pb-12">
+  <div className="relative z-10 flex flex-col items-center justify-end h-full text-center text-white pb-12 mb-4">
     <div
-      className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in mb-6"
+      className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in mb-14"
       style={{ animationDelay: '0.6s' }}
     >
       <Button asChild size="lg" className="bg-gradient-primary hover:opacity-90 text-primary-foreground shadow-elegant">

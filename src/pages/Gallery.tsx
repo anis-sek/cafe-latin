@@ -102,8 +102,8 @@ const Gallery: React.FC = () => {
     {
       src: disser1,
       alt: 'Plats signature',
-      title: 'Fondant au chocolat',
-      description: 'Fondant au chocolat, cœur coulant '
+      title: 'Charlotte au chocolat',
+      description: 'Charlotte au chocolat et sa crème anglaise '
     },
     {
       src: disser2,

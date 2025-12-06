@@ -52,14 +52,8 @@ const Menu: React.FC = () => {
           </Card>
         </div>
 
-        {/* Nouvelle phrase améliorée */}
-          <p className="font-body italic max-w-3xl mx-auto text-center">
-            Découvrez également notre remarquable sélection de vins <strong className='font-bold text-bordeaux'>plus de 55 références </strong> 
-            issues des plus belles régions de France, choisies avec exigence pour combler aussi bien les amateurs de grands crus que les passionnés de découvertes authentiques.
-          </p>
-
         {/* Image des vines 55 */}
-        <div className="flex justify-center">
+        <div className="flex justify-center mt-2">
           <Card className="shadow-elegant border-bordeaux/20 overflow-hidden max-w-4xl w-full">
             <CardContent className="p-0">
               <Zoom>

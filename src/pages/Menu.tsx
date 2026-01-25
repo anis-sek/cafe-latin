@@ -32,8 +32,8 @@ const Menu: React.FC = () => {
         </div>
 
         <p className="font-body italic max-w-3xl mx-auto text-center">
-         Tous nos plats sont élaborés à partir d’ingrédients frais et de saison,<br />
-          sélectionnés avec soin pour préserver la richesse et la sincérité des saveurs.
+         {t('menu.intro.line1')}<br />
+          {t('menu.intro.line2')}
        </p>
 
 

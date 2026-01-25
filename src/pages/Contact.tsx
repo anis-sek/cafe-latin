@@ -27,9 +27,10 @@ const Contact: React.FC = () => {
     e.preventDefault();
     // In a real app, this would send the form data to a server
     toast({
-      title: "Message envoyé !",
-      description: "Nous vous répondrons dans les plus brefs délais.",
-    });
+  title: t('contact.toast.sentTitle'),
+  description: t('contact.toast.sentDescription'),
+});
+
     setFormData({ name: '', email: '', message: '' });
   };
 
@@ -71,21 +72,20 @@ const Contact: React.FC = () => {
                   </div>
                   <div className="flex-1">
                     <h3 className="text-xl font-elegant font-semibold text-bordeaux mb-2">
-                      Adresse
+                       {t('contact.addressLabel')}
                     </h3>
                     <p className="text-charcoal/80 font-body mb-3">
                       {t('common.address')}
                     </p>
                     <p className="text-sm text-muted-foreground font-body mb-4">
-                      Quartier Latin - Métro Saint-Michel, Odéon
+                      {t('contact.locationHint')}
                     </p>
                     <Button 
                       onClick={handleLocationClick}
                       variant="outline" 
                       size="sm"
                       className="border-bordeaux/30 text-bordeaux hover:bg-bordeaux hover:text-primary-foreground"
-                    >
-                      Voir sur Google Maps
+                    >{t('contact.openGoogleMaps')}
                     </Button>
                   </div>
                 </div>
@@ -117,7 +117,7 @@ const Contact: React.FC = () => {
                     </div>
                     <div>
                       <h3 className="text-lg font-elegant font-semibold text-bordeaux">
-                        Email
+                       {t('contact.email')}
                       </h3>
                       <p className="text-charcoal/80 font-body">
                         {t('common.email')}
@@ -161,8 +161,7 @@ const Contact: React.FC = () => {
             />
           </div>
           <p className="text-lg text-charcoal/80 max-w-2xl mx-auto font-body">
-            Nous avons hâte de vous accueillir au Café Latin pour partager avec vous 
-            notre passion pour la gastronomie française et l'art de vivre parisien.
+            {t('contact.bottomText')}
           </p>
         </div>
       </div>

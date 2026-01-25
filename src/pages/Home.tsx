@@ -53,7 +53,7 @@ const Home: React.FC = () => {
 
     <img
       src={logoCL}
-      alt="Logo Café Latin"
+      alt={t('home.logo.alt')}
       className="w-16 h-16 md:w-20 md:h-20 object-contain"
     />
 
@@ -100,17 +100,17 @@ const Home: React.FC = () => {
                   </div>
                 </div>
                 <h3 className="text-xl font-elegant font-semibold text-bordeaux mb-4">
-                  Quartier Latin
+                  {t('home.location.title')}
                 </h3>
                 <div className="space-y-2 text-charcoal/80">
                   <p className="font-body">{t('common.address')}</p>
-                  <p className="font-body text-sm">Proche Saint-Michel & Odéon</p>
+                  <p className="font-body text-sm">{t('home.location.hint')}</p>
                   <Button 
                     variant="link" 
                     className="text-bordeaux hover:text-bordeaux-light p-0 h-auto"
                     onClick={() => window.open('https://maps.google.com/?q=30+rue+Saint-André+des+Arts,+75006+Paris+France', '_blank')}
                   >
-                    Voir sur la carte →
+                    {t('home.location.ctaMap')}
                   </Button>
                 </div>
               </CardContent>
@@ -135,7 +135,7 @@ const Home: React.FC = () => {
                     variant="link" 
                     className="text-bordeaux hover:text-bordeaux-light p-0 h-auto mt-2"
                   >
-                    <Link to="/contact">Nous contacter →</Link>
+                    <Link to="/contact">{t('home.contact.cta')}</Link>
                   </Button>
                 </div>
               </CardContent>
@@ -150,17 +150,16 @@ const Home: React.FC = () => {
     </div>
 
     <h3 className="text-xl font-elegant font-semibold text-bordeaux mb-4">
-      Privatisation & Événements
+       {t('home.events.title')}
     </h3>
 
     <div className="space-y-2 text-charcoal/80 font-body">
       <p>
-        Profitez de notre salle du <span className="font-semibold">1er étage</span>, 
-        entièrement isolée et équipée d’un système audio dédié.
+        {t('home.events.p1.before')}{' '} <span className="font-semibold">{t('home.events.p1.floor')}</span>,{' '}{t('home.events.p1.after')}
       </p>
       <p>
-        Parfaite pour vos <span className="italic">anniversaires, fêtes entre amis </span> 
-        ou vos <span className="italic">réunions familiales</span> dans un cadre intime et chaleureux.
+       {t('home.events.p2.before')}{' '} <span className="italic">{t('home.events.p2.birthdays')},{' '} </span> 
+        {t('home.events.p2.or')}{' '} <span className="italic">{t('home.events.p2.family')}</span>{' '}{t('home.events.p2.after')}
       </p>
 
       <Button
@@ -174,7 +173,7 @@ const Home: React.FC = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Réserver une salle →
+          {t('home.events.ctaReserveRoom')}
         </a>
       </Button>
     </div>
@@ -191,7 +190,7 @@ const Home: React.FC = () => {
           <div className="flex justify-center">
             <img 
               src={decorativeOrnament} 
-              alt="Decorative ornament" 
+              alt={t('common.decorativeOrnamentAlt')} 
               className="w-40 h-20 opacity-80 rounded-full object-contain"
             />
           </div>

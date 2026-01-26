@@ -35,8 +35,13 @@ const Contact: React.FC = () => {
   };
 
   const handleLocationClick = () => {
-    window.open('https://maps.google.com/?q=30+rue+Saint-André+des+Arts,+75006+Paris+France', '_blank');
-  };
+  window.open(
+    'https://www.google.com/maps/place/Caf%C3%A9+Latin/@48.8533669,2.3422756,17z/data=!3m1!4b1!4m6!3m5!1s0x47e671de4e8c974d:0x86ec4d1a01610843!8m2!3d48.8533669!4d2.3422756!16s%2Fg%2F1tfdcs7p!18m1!1e1?entry=ttu&g_ep=EgoyMDI2MDEyMS4wIKXMDSoASAFQAw%3D%3D',
+    '_blank',
+    'noopener,noreferrer'
+  );
+};
+
 
   return (
     <div className="min-h-screen bg-gradient-elegant pt-24 pb-16">

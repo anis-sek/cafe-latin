@@ -19,7 +19,7 @@ const Header: React.FC = () => {
 
   const handleLocationClick = () => {
   window.open(
-    'https://www.google.com/maps/place/Caf%C3%A9+Latin/@48.8533791,2.3423106,20.93z/data=!4m14!1m7!3m6!1s0x47e66e1f06e2b70f:0x531dfff36c0f3ab2!2sV83R%2B8W,+Paris!3b1!8m2!3d48.8533125!4d2.3423125!3m5!1s0x47e671de4e8c974d:0x86ec4d1a01610843!8m2!3d48.8533669!4d2.3422756!16s%2Fg%2F1tfdcs7p?entry=ttu',
+    'https://www.google.com/maps/place/Caf%C3%A9+Latin/@48.8533669,2.3422756,17z/data=!3m1!4b1!4m6!3m5!1s0x47e671de4e8c974d:0x86ec4d1a01610843!8m2!3d48.8533669!4d2.3422756!16s%2Fg%2F1tfdcs7p!18m1!1e1?entry=ttu&g_ep=EgoyMDI2MDEyMS4wIKXMDSoASAFQAw%3D%3D',
     '_blank',
     'noopener,noreferrer'
   );

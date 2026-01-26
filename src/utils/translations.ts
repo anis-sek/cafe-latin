@@ -44,7 +44,7 @@ export const translations = {
 'contact.openGoogleMaps': 'Voir sur Google Maps',
 'contact.toast.sentTitle': 'Message envoyé !',
 'contact.toast.sentDescription': 'Nous vous répondrons dans les plus brefs délais.',
-'contact.bottomText': 'Nous avons hâte de vous accueillir au Café Latin pour partager avec vous notre passion pour la gastronomie française et l\'art de vivre parisien.',
+'contact.bottomText': 'Nous avons hâte de vous accueillir au Café Latin pour partager avec vous notre passion pour la cuisine traditionnelle française et l\'art de vivre parisien.',
 
 // Gallery (extended)
 'gallery.images.1.alt': 'Intérieur du Café Latin',
@@ -358,8 +358,8 @@ export const translations = {
     
     // Common
     'common.address': '30 Rue Saint-André des Arts, 75006 Paris',
-    'common.phone': '+33 1 43 54 23 70',
-    'common.email': 'contact@cafelatin.paris',
+    'common.phone': '+33 1 46 33 02 06',
+    'common.email': 'cafelatinparis6@gmail.com',
 
   }
 };
